@@ -7,4 +7,5 @@ Creating a reverse lookup zone
 Create an A record
 Describes the Domain Name System (DNS) features that are new or changed in Windows Server 2016.
 ```
-<img src="https://github.com/jniranjanreddy/windows/blob/main/2012-dns-1.JPG" alt="Alt text" title="Optional title">
+
+![Alt text]"https://github.com/jniranjanreddy/windows/blob/main/2012-dns-1.JPG "Optional title")
