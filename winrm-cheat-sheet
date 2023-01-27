@@ -1,6 +1,48 @@
  # Debugging winrm
  
+ # Enable winrm service
  ```
+ Enable-PSRemoting -Force
+ ```
+ # Verify the network configuration of the WinRM service.
+ ```
+ winrm enumerate winrm/config/listener
+ ```
+#  In our example, the WinRM service is allowing HTTP connections.
+# Verify the WinRM service configuration
+```
+winrm get winrm/config/service
+```
+# Test the local connection to the WinRM service.
+```
+Test-WsMan 127.0.0.1
+```
+# Test the connection to the remote computer on the TCP port 5985.
+```
+(New-Object System.Net.Sockets.TcpClient).ConnectAsync('52.37.189.81', 5985).Wait(1000)
+```
+# Test the connection to the remote WinRM service.
+```
+Test-WSMan -ComputerName 52.37.189.81
+```
+# Execute a remote command using WinRM and Powershell.
+```
+Invoke-Command -ComputerName 52.37.189.81 -ScriptBlock { ipconfig } -credential administrator
+```
+# Test the connection to the remote WinRM service.
+```
+Test-WSMan -ComputerName 52.37.189.81
+```
+
+# Start a remote session using Powershell and WinRM.
+ ```
+ Enter-PSSession -ComputerName 52.37.189.81 -Credential administrator
+ ```
+ 
+ 
+ 
+ 
+ ``` 
  From CMD, start the WinRM service and load the default WinRM configuration.
 
  PS C:\Windows\system32>  winrm quickconfig
