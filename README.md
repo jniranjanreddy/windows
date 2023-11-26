@@ -24,3 +24,8 @@ ProductVendor   : Microsoft Corporation
 ProductVersion  : OS: 6.3.9600 SP: 0.0 Stack: 3.0
 
 ```
+## if not able to RDP CredSSP encryption oracle remediation.
+```
+below is the fix.
+https://usdkb.sandiego.edu/s/article/Remote-Desktop-Connection-CredSSP-encryption-oracle-remediation-error
+```
