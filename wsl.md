@@ -1,4 +1,7 @@
 ##https://apps.microsoft.com/detail/9PDXGNCFSCZV?rtc=1&activetab=pivot%3Aoverviewtab&hl=en-us&gl=US
+```
+Execute this command on wsl command to work  Crtl+c:  stty intr \^c
+```
 
 ```
 # To list installed distributions
