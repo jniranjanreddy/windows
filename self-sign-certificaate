@@ -1,0 +1,1 @@
+New-SelfSignCertificate -certstorelocation c:\Users\Ashish\Downloads -dnsname www.contoso.com
