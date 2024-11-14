@@ -1,6 +1,18 @@
 ##https://apps.microsoft.com/detail/9PDXGNCFSCZV?rtc=1&activetab=pivot%3Aoverviewtab&hl=en-us&gl=US
 ```
 Execute this command on wsl command to work  Crtl+c:  stty intr \^c
+
+How to update wsl
+c:\ winget search Microsoft.PowerShell
+Name               Id                           Version Source
+---------------------------------------------------------------
+PowerShell         Microsoft.PowerShell         7.4.6.0 winget
+PowerShell Preview Microsoft.PowerShell.Preview 7.5.0.5 winget
+
+update:
+winget install --id Microsoft.PowerShell --source winget
+
+
 ```
 
 ```
